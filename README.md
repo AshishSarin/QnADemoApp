@@ -15,3 +15,39 @@ This demo app is developed for an interview test.
 9. Enable USB debugging on your device
 10. Click on run app in android studio and select your device from the list
 11. Inside QnADemoApp, also run "npm start" command.
+
+
+** Questions can be modified or added by editing "questions.json" file in data folder **
+
+
+# Screen shots
+
+![Alt text](https://github.com/AshishSarin/QnADemoApp/blob/master/screenshots/Screenshot_20190209-182548.png)
+
+![Alt text](https://github.com/AshishSarin/QnADemoApp/blob/master/screenshots/Screenshot_20190209-182554.png)
+
+
+![Alt text](https://raw.githubusercontent.com/AshishSarin/QnADemoApp/master/screenshots/Screenshot_20190209-182618.png)
+
+![Alt text](https://github.com/AshishSarin/QnADemoApp/blob/master/screenshots/Screenshot_20190209-182611.png)
+
+
+
+
+
+
+
+![Alt text](https://github.com/AshishSarin/QnADemoApp/blob/master/screenshots/Screenshot_20190209-182618.png)
+
+
+
+
+
+
+![Alt text](https://github.com/AshishSarin/QnADemoApp/blob/master/screenshots/Screenshot_20190209-182624.png)
+
+
+
+
+
+
