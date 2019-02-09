@@ -1,4 +1,4 @@
-# GithubDemoApp
+# QnADemoApp
 
 This demo app is developed for an interview test.
 
