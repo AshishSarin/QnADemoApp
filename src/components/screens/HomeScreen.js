@@ -13,14 +13,15 @@ class HomeScreen extends Component {
             <View style={homeScreenStyles.homeContainer}>
                 <SubmitButton
                     label={BUTTON_LABELS.START_QUESTIONNAIRE}
-                    onPressBtn={this.onPressStartQuestionnaire}
+                    onPressBtn={this.onPressStartQuestionnaire.bind(this)}
                 />
             </View>
         )
     }
 
     onPressStartQuestionnaire() {
-        console.log('Start Questionare');
+        const { navigate } = this.props.navigation;
+        navigate('QnAScreen');
     }
 
 }

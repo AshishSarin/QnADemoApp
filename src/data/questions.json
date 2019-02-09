@@ -1,0 +1,60 @@
+[
+    {
+        "question": "Which exercises are good for Legs?",
+        "options": [
+            {
+                "code": 1,
+                "value": "Chest",
+                "imgCd": "gym_chest"
+            },
+            {
+                "code": 2,
+                "value": "Leg",
+                "imgCd": "gym_leg"
+            },
+            {
+                "code": 3,
+                "value": "Shoulder",
+                "imgCd": "gym_shoulder"
+            },
+            {
+                "code": 4,
+                "value": "Back",
+                "imgCd": "gym_back"
+            },
+        ],
+        "answer": {
+            "code": 2,
+            "value": "Leg"
+        }
+    },
+    {
+        "question": "Which one is not a fruit?",
+        "options": [
+            {
+                "code": 1,
+                "value": "Apple",
+                "imgCd": "fruit_apple"
+            },
+            {
+                "code": 2,
+                "value": "Mango",
+                "imgCd": "fruit_mango"
+            },
+            {
+                "code": 3,
+                "value": "Carrot",
+                "imgCd": "fruit_carrot"
+            },
+            {
+                "code": 4,
+                "value": "Grapes",
+                "imgCd": "fruit_grapes"
+            }
+        ],
+        "answer": {
+            "code": 3,
+            "value": "Leg"
+        }
+    }
+]

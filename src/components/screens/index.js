@@ -1,3 +1,4 @@
 import HomeScreen from './HomeScreen';
+import QnAScreen from './QnAScreen';
 
-export { HomeScreen };
+export { HomeScreen, QnAScreen };
