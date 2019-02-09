@@ -20,3 +20,34 @@ This demo app is developed for an interview test.
 ** Questions can be modified or added by editing "questions.json" file in data folder **
 
 
+# Screen shots
+
+![Alt text](https://github.com/AshishSarin/QnADemoApp/blob/master/screenshots/Screenshot_20190209-182548.png)
+
+![Alt text](https://github.com/AshishSarin/QnADemoApp/blob/master/screenshots/Screenshot_20190209-182554.png)
+
+
+![Alt text](https://raw.githubusercontent.com/AshishSarin/QnADemoApp/master/screenshots/Screenshot_20190209-182618.png)
+
+![Alt text](https://github.com/AshishSarin/QnADemoApp/blob/master/screenshots/Screenshot_20190209-182611.png)
+
+
+
+
+
+
+
+![Alt text](https://github.com/AshishSarin/QnADemoApp/blob/master/screenshots/Screenshot_20190209-182618.png)
+
+
+
+
+
+
+![Alt text](https://github.com/AshishSarin/QnADemoApp/blob/master/screenshots/Screenshot_20190209-182624.png)
+
+
+
+
+
+
