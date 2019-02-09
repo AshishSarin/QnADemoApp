@@ -17,6 +17,6 @@ This demo app is developed for an interview test.
 11. Inside QnADemoApp, also run "npm start" command.
 
 
-**** Questions can be modified or added by editing "questions.json" file in data folder ***
+** Questions can be modified or added by editing "questions.json" file in data folder **
 
 
