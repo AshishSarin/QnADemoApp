@@ -16,16 +16,17 @@ export const qnAScreenStyles = StyleSheet.create({
 
     questionContainer: {
         alignItems: 'center',
-        marginTop: 12
+        marginTop: 36
     },
 
     questionTxt: {
         color: 'black',
-        fontSize: 14
+        fontSize: 14,
+        fontWeight: 'bold'
     },
 
     optionContainer: {
-        paddingHorizontal: "6%"
+        paddingHorizontal: "6%",
     },
     optionGroup: {
         flexDirection: 'row',

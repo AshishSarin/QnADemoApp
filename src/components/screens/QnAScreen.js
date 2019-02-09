@@ -3,7 +3,7 @@ import { View, Text } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 import { SubmitButton } from '../buttons';
 import quesList from '../../data/questions';
-import { OptionItem } from '../wigets';
+import { OptionItem, AppStatusBar } from '../widgets';
 import { ResultDialog } from '../dialogs';
 import { RESULT_DIALOG_ACTION_LABELS, BUTTON_LABELS } from '../../values';
 import { qnAScreenStyles } from '../../styles/Layouts';
@@ -25,6 +25,7 @@ class QnAScreen extends Component {
         const { options } = quesList[this.state.qIndex];
         return (
             <View style={qnAScreenStyles.container}>
+                <AppStatusBar />
                 {this.renderDialog()}
                 <ScrollView style={qnAScreenStyles.optionContainer}>
                     {this.renderQuestion()}

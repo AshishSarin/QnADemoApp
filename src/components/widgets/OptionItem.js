@@ -6,7 +6,7 @@ import { SubmitButton } from '../buttons';
 import Dialog, { DialogContent } from 'react-native-popup-dialog';
 import quesList from '../../data/questions';
 import { getImage, images } from '../../utils/ImageUtils';
-import { optionItemStyles } from '../../styles/Widgets';
+import { optionItemStyles } from '../../styles';
 
 
 export default class OptionItem extends Component {

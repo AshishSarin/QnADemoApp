@@ -1,9 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {
-    TouchableOpacity, TouchableNativeFeedback,
-    Platform, Text, View
+    TouchableOpacity, Text,
 } from 'react-native';
-import { submitButtonStyles } from '../../styles/Buttons';
+import { submitButtonStyles } from '../../styles';
 
 
 export default SubmitButton = (props) => {

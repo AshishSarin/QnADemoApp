@@ -1,40 +1,38 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Text, Image, } from 'react-native';
 import { SubmitButton } from '../buttons';
 import Dialog, { DialogContent } from 'react-native-popup-dialog';
-import { resultDialogStyles } from '../../styles/Dialogs';
 import { RESULT_TEXT } from '../../values';
+import { resultDialogStyles } from '../../styles';
 
-export default class ResultDialog extends Component {
+export default ResultDialog = (props) => {
 
-    render() {
+    const { onPressDialogBtn, footerLabel,
+        isVisible, isAnswerCorrect,
+    } = props;
 
-        const { onPressDialogBtn, footerLabel,
-            isVisible, isAnswerCorrect,
-        } = this.props;
+    let resultImage = isAnswerCorrect ?
+        require('../../images/result_correct.png') :
+        require('../../images/result_wrong.png');
 
-        let resultImage = isAnswerCorrect ?
-            require('../../images/result_correct.png') :
-            require('../../images/result_wrong.png');
+    return (
+        <Dialog
+            footer={<SubmitButton label={footerLabel}
+                onPressBtn={onPressDialogBtn} />}
+            visible={isVisible}
+        >
+            <DialogContent style={resultDialogStyles.container}>
+                <Image style={resultDialogStyles.resultImg} source={resultImage} />
 
-        return (
-            <Dialog
-                footer={<SubmitButton label={footerLabel}
-                    onPressBtn={onPressDialogBtn} />}
-                visible={isVisible}
-            >
-                <DialogContent style={resultDialogStyles.container}>
-                    <Image style={resultDialogStyles.resultImg} source={resultImage} />
+                <Text style={resultDialogStyles.resultText}>
+                    {isAnswerCorrect ? RESULT_TEXT.PREFIX_CORRECT : RESULT_TEXT.PREFIX_WRONG}
+                </Text>
+                <Text style={resultDialogStyles.resultText}>
+                    {isAnswerCorrect ? RESULT_TEXT.CORRECT : RESULT_TEXT.WRONG}
+                </Text>
+            </DialogContent>
+        </Dialog >
 
-                    <Text style={resultDialogStyles.resultText}>
-                        {isAnswerCorrect ? RESULT_TEXT.PREFIX_CORRECT : RESULT_TEXT.PREFIX_WRONG}
-                    </Text>
-                    <Text style={resultDialogStyles.resultText}>
-                        {isAnswerCorrect ? RESULT_TEXT.CORRECT : RESULT_TEXT.WRONG}
-                    </Text>
-                </DialogContent>
-            </Dialog >
+    );
 
-        )
-    }
 }
