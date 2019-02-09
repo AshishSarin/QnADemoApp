@@ -106,12 +106,14 @@ class QnAScreen extends Component {
             if (currentQues.answer.code ===
                 currentOptions[this.state.optionSelected].code) {
                 // user's answer is correct
-                this.setState(...this.state, {
+                this.setState({
                     visible: true,
                     isAnswerCorrect: true
+                }, () => {
+                    console.log(this.state)
                 })
             } else {
-                this.setState(...this.state, {
+                this.setState({
                     visible: true,
                     isAnswerCorrect: false
                 })
@@ -135,7 +137,6 @@ class QnAScreen extends Component {
                 // user is on last question 
                 // navigate back to home screen
                 this.setState({
-                    ...this.state,
                     visible: false,
                 }, () => {
 
@@ -144,15 +145,15 @@ class QnAScreen extends Component {
 
             } else {
                 this.setState({
-                    ...this.state,
                     visible: false,
                     optionSelected: -1,
                     qIndex: this.state.qIndex + 1
+                }, () => {
+                    console.log(this.state)
                 });
             }
         } else {
             this.setState({
-                ...this.state,
                 visible: false,
                 isAnswerCorrect: false,
                 optionSelected: -1,
@@ -170,7 +171,6 @@ class QnAScreen extends Component {
 
     onPressOption = (optionIndex) => {
         this.setState({
-            ...this.state,
             optionSelected: optionIndex
         })
     }
